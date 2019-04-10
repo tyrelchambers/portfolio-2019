@@ -1,0 +1,108 @@
+@import '../../colours.scss';
+
+.skill {
+  h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $grey6;
+    font-size: 0.9rem;
+  }
+}
+
+.skills {
+
+  .skill-level {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+  .skill-level-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.skills.front-end {
+  .skill-level {
+    border: 1.5px solid $blue8;
+  }
+
+  .skill-level-inner {
+    background-color: $blue8;
+  }
+}
+
+.skills.design {
+  margin-top: 4em;
+
+  .skill-level {
+    border: 1.5px solid $yellow7;
+  }
+
+  .skill-level-inner {
+    background-color: $yellow7;
+   
+  }
+}
+
+.skills.personalSkills {
+  margin-top: 4em;
+
+  .skill-level {
+    border: 1.5px solid $orange;
+  }
+
+  .skill-level-inner {
+    background-color: $orange;
+   
+  }
+}
+
+.date {
+  margin-bottom: -1em;
+  color: $orange;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    max-width: 40px;
+    min-width: 10px;
+    height: 2px;
+    background: $orange;
+    margin-right: 1em;
+  }
+}
+
+#affinity {
+  width: 90%;
+}
+
+#figma {
+  width: 75%;
+}
+
+
+#htmlScss {
+  width: 100%;
+}
+
+#javascript {
+  width: 75%;
+}
+
+#nodeExpress {
+  width: 50%;
+}
+
+#git {
+  width: 75%;
+}
+
+#react {
+  width: 55%;
+}
