@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import { IndexPage } from './pages/IndexPage/IndexPage';
 import './globals.scss';
@@ -9,6 +9,7 @@ import ProjectPage from './pages/ProjectPage/ProjectPage';
 ReactDOM.render(
   <Router basename="/">
     <Switch>
+      <Route exact path="/" render={() => <Redirect to="/home"/>}/>
       <Route exact path="/:page" component={IndexPage}/>
       <Route exact path="/portfolio/:project" component={ProjectPage} />
     </Switch>
