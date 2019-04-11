@@ -12,7 +12,7 @@ export const IndexPage = (props) => {
     <div className="site-wrapper">
       <h1 className="fancy-title ta-c">Tyrel Chambers</h1>
 
-      <div className="d-f mt+">
+      <div className="d-f mt+ mobile-wrapper">
         <div className="personal mr+">
           <Header />
         </div>        

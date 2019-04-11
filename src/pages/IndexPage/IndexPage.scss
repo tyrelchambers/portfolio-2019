@@ -12,3 +12,15 @@
   width:35%;
 
 }
+
+@media screen and (max-width: 550px) {
+  .mobile-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personal {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
