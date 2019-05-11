@@ -10,7 +10,7 @@ import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 ReactDOM.render(
   <Router basename="/">
     <Switch>
-      <Route exact path="/home" component={IndexPage}/>
+      <Route exact path="/" component={IndexPage}/>
       <Route exact path="/portfolio" component={PortfolioPage} />
       <Route exact path="/portfolio/:project" component={ProjectPage} />
     </Switch>

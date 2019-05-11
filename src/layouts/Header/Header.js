@@ -8,7 +8,7 @@ const Header = (props) => {
       <img src={require('../../assets/me.JPG')} alt="Me sitting in my car" className="profile-img" />
 
       <nav className="navbar d-f fxd-c">
-        <Link to="/home">
+        <Link to="/">
           About Me
           <i className="fas fa-user-astronaut"></i>
         </Link>
