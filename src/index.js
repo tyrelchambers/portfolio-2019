@@ -13,7 +13,7 @@ ReactDOM.render(
       <Route exact path="/:page" component={IndexPage}/>
       <Route exact path="/portfolio/:project" component={ProjectPage} />
     </Switch>
-  </Router>, document.getElementById('root'));
+  </Router>, document.getElementById('root')); 
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
