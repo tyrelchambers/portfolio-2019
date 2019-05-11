@@ -7,7 +7,6 @@ import Socials from '../../layouts/Socials/Socials';
 
 
 export const IndexPage = (props) => {
-  const slug = props.match.params.page;
 
   return(
     <div className="site-wrapper">
@@ -18,17 +17,9 @@ export const IndexPage = (props) => {
           <Header />
         </div>        
 
-        <PageHandler slug={slug} />
+        <AboutPage />
       </div>
     </div>
   );
 };
 
-const PageHandler = (props) => {
-  const pages = {
-    "home": <AboutPage/>,
-    'portfolio': <PortfolioPage />
-  }
-  
-  return pages[props.slug];
-}

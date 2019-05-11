@@ -5,12 +5,13 @@ import * as serviceWorker from './serviceWorker';
 import { IndexPage } from './pages/IndexPage/IndexPage';
 import './globals.scss';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
+import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 
 ReactDOM.render(
   <Router basename="/">
     <Switch>
-      <Route exact path="/" render={() => <Redirect to="/home"/>}/>
-      <Route exact path="/:page" component={IndexPage}/>
+      <Route exact path="/home" component={IndexPage}/>
+      <Route exact path="/portfolio" component={PortfolioPage} />
       <Route exact path="/portfolio/:project" component={ProjectPage} />
     </Switch>
   </Router>, document.getElementById('root')); 
