@@ -10,8 +10,14 @@
   .fancy-title {
     opacity: 0.6;
     transition: all 0.2s ease;
+    font-size: 3rem;
+    margin: 0;
     &:hover {
       opacity: 1;
     }
   }
+}
+
+.projects {
+  flex-wrap: wrap;
 }
